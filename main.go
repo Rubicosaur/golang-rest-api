@@ -1,12 +1,12 @@
 package main
 
 import (
-	"fmt"
-
-	"github.com/Rubicosaur/golang-rest-api/models"
+	"github.com/gin-gonic/gin"
 )
 
 func main() {
-	t := models.GenerateTicket("123", "Abc", "Abc", "Abc", "abc")
-	fmt.Println(t)
+
+	router := gin.Default()
+
+	router.Run("localhost:8081")
 }
