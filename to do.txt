@@ -1,0 +1,7 @@
+1. Create package to generate ticket with alphanumeric signature (20 signs)
+2. Create Database with users (postgres) 
+3. Rest api to allow:
+- user login
+- user registration
+- book ticket
+4. Simple html form to login, register, and buy ticket
