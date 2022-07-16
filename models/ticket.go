@@ -3,6 +3,7 @@ package models
 type ticket struct {
 	Id                string `json:"id"`
 	PassengerName     string `json:"passengername"`
+	PassengerSurname  string `json:"passengersurname"`
 	Departurelocation string `json:"departurelocation"`
 	ArrivalLocation   string `json:"arrivallocation"`
 }
