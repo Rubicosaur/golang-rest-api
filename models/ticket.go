@@ -1,13 +1,18 @@
 package models
 
-type Ticket struct {
+type ticket struct {
 	Id                string `json:"id"`
 	PassengerName     string `json:"passengername"`
 	Departurelocation string `json:"departurelocation"`
 	ArrivalLocation   string `json:"arrivallocation"`
 }
 
-func (t *Ticket) GenerateId() {
+func GenerateTicket(id, name, surname, departureLoc, arrivalLoc string) ticket {
 
-	t.Id = "foo"
+	t := ticket{}
+
+	t.Id = id
+	t.PassengerName = name
+
+	return t
 }
